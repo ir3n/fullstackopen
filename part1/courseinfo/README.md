@@ -1,16 +1,5 @@
-# React + Vite
+# Exercises 1.1.-1.5.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Link for 1.1.-1.2.](https://fullstackopen.com/en/part1/introduction_to_react#exercises-1-1-1-2:~:text=the%20next%20part.-,Exercises%201.1.%2D1.2.,-The%20exercises%20are)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Link for 1.3.-1.5.](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5:~:text=the%20arrow%20syntax.-,Exercises%201.3.%2D1.5.,-We%20continue%20building)
