@@ -3,7 +3,7 @@ const PhonebookForm = ({ formData, onInputChange, handleSubmit }) => {
     <form onSubmit={handleSubmit}>
       <div>
         <div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Name: </label>
           <input
             id="name"
             type="text"
@@ -14,7 +14,7 @@ const PhonebookForm = ({ formData, onInputChange, handleSubmit }) => {
           />
         </div>
         <div>
-          <label htmlFor="number">Number</label>
+          <label htmlFor="number">Number: </label>
           <input
             id="number"
             type="text"
