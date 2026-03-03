@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import PhonebookForm from "./components/PhonebookForm";
 import PhonebookList from "./components/PhonebookList";
 import SearchInput from "./components/SearchInput";
 
-const initData = [{
-  name: "Arto Hellas",
-  number: "040-12344556",
-}];
-
 const App = () => {
-  const [persons, setPersons] = useState(initData);
+  const [persons, setPersons] = useState([]);
 
   const [formData, setFormData] = useState({ name: "", number: "" });
 
   const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/persons').then(res => setPersons(res.data));
+  }, []);
 
   const handleInputChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
