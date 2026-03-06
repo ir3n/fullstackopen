@@ -37,6 +37,16 @@ const App = () => {
     }
   };
 
+  const handlePersonDelete = (id) => {
+    personService
+      .remove(id)
+      .then((deletedPerson) =>
+        setPersons((prevPersons) =>
+          prevPersons.filter((person) => person.id !== deletedPerson.id),
+        ),
+      );
+  };
+
   const filteredPersons = persons.filter((person) =>
     person.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
@@ -59,7 +69,10 @@ const App = () => {
       />
 
       <h2>Numbers</h2>
-      <PhonebookList persons={filteredPersons} />
+      <PhonebookList
+        persons={filteredPersons}
+        handleDelete={handlePersonDelete}
+      />
     </div>
   );
 };

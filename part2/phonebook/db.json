@@ -1,19 +1,9 @@
 {
   "persons": [
     {
-      "name": "Arto Hellas",
-      "number": "040-123456",
-      "id": "1"
-    },
-    {
       "name": "Ada Lovelace",
       "number": "39-44-5323523",
       "id": "2"
-    },
-    {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": "3"
     },
     {
       "name": "Mary Poppendieck",
@@ -26,9 +16,9 @@
       "number": "12345"
     },
     {
-      "id": "9c02",
-      "name": "test",
-      "number": "98765"
+      "id": "7d09",
+      "name": "someone else",
+      "number": "1111111"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
