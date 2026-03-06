@@ -26,7 +26,19 @@ const App = () => {
         (person) => person.name.toLowerCase() === formData.name.toLowerCase(),
       )
     ) {
-      alert(`${formData.name} is already added to the phonebook.`);
+      if (
+        window.confirm(
+          `${formData.name} is already added to the phonebook, would you like to replace the phone number with a new one?`,
+        )
+      ) {
+        const existingPerson = persons.find(
+          (person) => person.name.toLowerCase() === formData.name.toLowerCase(),
+        );
+        //keep the existing id
+        const editedPerson = { ...existingPerson, ...formData };
+        handlePersonEdit(editedPerson);
+        setFormData({ name: "", number: "" });
+      }
     } else {
       personService
         .create(formData)
@@ -43,6 +55,18 @@ const App = () => {
       .then((deletedPerson) =>
         setPersons((prevPersons) =>
           prevPersons.filter((person) => person.id !== deletedPerson.id),
+        ),
+      );
+  };
+
+  const handlePersonEdit = (personToEdit) => {
+    personService
+      .edit(personToEdit)
+      .then((editedPerson) =>
+        setPersons((prevPersons) =>
+          prevPersons.map((person) =>
+            person.id === editedPerson.id ? editedPerson : person,
+          ),
         ),
       );
   };
