@@ -14,6 +14,16 @@
       "id": "c6ba",
       "name": "new person",
       "number": "12345"
+    },
+    {
+      "id": "b88e",
+      "name": "asdf",
+      "number": "123"
+    },
+    {
+      "id": "f2d4",
+      "name": "notification",
+      "number": "123"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
