@@ -1,0 +1,14 @@
+.alert {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid;
+  font-weight: bold;
+
+  &.success {
+    color: green;
+  }
+
+  &.error {
+    color: red;
+  }
+}

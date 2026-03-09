@@ -14,21 +14,6 @@
       "id": "c6ba",
       "name": "new person",
       "number": "12345"
-    },
-    {
-      "id": "7d09",
-      "name": "someone else",
-      "number": "1111111"
-    },
-    {
-      "id": "13be",
-      "name": "asdf",
-      "number": "2345"
-    },
-    {
-      "id": "366f",
-      "name": "test",
-      "number": "12345"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
