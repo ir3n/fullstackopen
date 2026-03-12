@@ -1,3 +1,5 @@
+import Weather from "./Weather";
+
 const CountryDetails = (countryProps) => {
   const { name, capital, area, languages, flag } = countryProps;
 
@@ -15,6 +17,7 @@ const CountryDetails = (countryProps) => {
         ))}
       </ul>
       <img src={flag.svg} alt={flag.alt} width={300} />
+      <Weather city={capital} />
     </div>
   );
 };
